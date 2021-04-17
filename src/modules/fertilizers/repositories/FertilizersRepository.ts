@@ -1,9 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
-import Fertilizer from '../entities/Fertilizer';
-// interface CreateFertilizerDTO {
-//   description: string;
-//   date: Date;
-// }
+import Fertilizer from '../infra/typeorm/entities/Fertilizer';
 
 @EntityRepository(Fertilizer)
 class FertilizersRepository extends Repository<Fertilizer> {}

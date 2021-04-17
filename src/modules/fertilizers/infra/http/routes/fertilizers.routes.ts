@@ -1,10 +1,10 @@
 import { parseISO } from 'date-fns';
 import { Router } from 'express';
 import { getCustomRepository } from 'typeorm';
-import ensureAuthenticated from '../middlewares/ensureAutheticated';
+import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAutheticated';
 
-import FertilizersRepository from '../../modules/fertilizers/repositories/FertilizersRepository';
-import CreateFertilizerService from '../../modules/fertilizers/services/CreateFertilizerService';
+import FertilizersRepository from '@modules/fertilizers/repositories/FertilizersRepository';
+import CreateFertilizerService from '@modules/fertilizers/services/CreateFertilizerService';
 
 const fertilizersRouter = Router();
 
