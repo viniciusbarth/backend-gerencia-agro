@@ -3,7 +3,7 @@ import { Router } from 'express';
 import { getCustomRepository } from 'typeorm';
 import ensureAuthenticated from '@modules/users/infra/http/middlewares/ensureAutheticated';
 
-import FertilizersRepository from '@modules/fertilizers/repositories/FertilizersRepository';
+import FertilizersRepository from '@modules/fertilizers/infra/typeorm/repositories/FertilizersRepository';
 import CreateFertilizerService from '@modules/fertilizers/services/CreateFertilizerService';
 
 const fertilizersRouter = Router();

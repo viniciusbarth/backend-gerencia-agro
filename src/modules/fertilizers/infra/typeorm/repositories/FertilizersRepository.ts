@@ -1,5 +1,5 @@
 import { EntityRepository, Repository } from 'typeorm';
-import Fertilizer from '../infra/typeorm/entities/Fertilizer';
+import Fertilizer from '../entities/Fertilizer';
 
 @EntityRepository(Fertilizer)
 class FertilizersRepository extends Repository<Fertilizer> {}

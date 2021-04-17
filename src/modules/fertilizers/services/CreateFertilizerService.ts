@@ -1,7 +1,7 @@
 import { getCustomRepository } from 'typeorm';
 
 import Fertilizer from '../infra/typeorm/entities/Fertilizer';
-import FertilizersRepository from '../repositories/FertilizersRepository';
+import FertilizersRepository from '../infra/typeorm/repositories/FertilizersRepository';
 
 interface Request {
   description: string;
